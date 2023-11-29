@@ -14,7 +14,7 @@ playerTwoInfo.aircraftDest = false
 playerTwoInfo.battleshipDest = false
 playerTwoInfo.submarineDest = false
 playerTwoInfo.shipsDest = 0;
-//sd
+//sds
 const aircraft = new Object()
 aircraft.char = "A"
 aircraft.size = 5
