@@ -1,0 +1,88 @@
+#presentForm {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.startTurn {
+    display: block;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.playArea {
+    display: block;
+    height: max-content;
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#player1Area {
+    display: inline-block;
+    float: left;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    
+    height: 600px;
+}
+
+#player2Area {
+    display: inline-block;
+    height: 600px;
+    float: right;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    
+    
+}
+
+#player1Grid {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(11, 25px);
+    grid-template-rows: repeat(11,25px);
+    gap: 1px;
+}
+
+#player2Grid {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(11, 25px);
+    grid-template-rows: repeat(11,25px);
+    gap: 1px;
+}
+
+#player1Name{
+    text-align: center;
+    padding: 10px;
+}
+#player2Name{
+    text-align: center;
+    padding: 10px;
+}
+#gameOverText {
+    text-align: center;
+    padding: 10px;
+}
+/* #shotIndicator{
+    text-align: center;
+    padding-left: 50%;
+}
+#endTurnBtn{
+    padding-left: 50%;
+} */
+.endTurn {
+    display: block;
+    text-align: center;
+    height: 75px;
+}
+#player1DestroyedShips{
+    display: inline-block;
+}
+#player2DestroyedShips{
+    display: inline-block;
+}
+#gridArea {
+    align-content: center;
+    position: relative;
+}
