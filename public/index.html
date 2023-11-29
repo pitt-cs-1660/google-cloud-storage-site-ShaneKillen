@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title> Battleship2 </title>
+    </head>
+
+    <body>
+        <div id="reenterText" hidden="true">Input must be entered Correctly</div>
+
+        <div id="presentForm">
+            <p id="formTitle"> Player 1 </p>
+
+                <form id="userInfoForm">
+                    <div>example ship entry:  A(A1-A5);B(B6-E6);S(H3-J3);</div>
+                    <br />
+
+                    <input type="text" placeholder="Enter Your Name" id="playerName" name="playerName" />
+                    <br /><br />
+
+                    <input type="text" placeholder="Ship Locations" id="playerShips" name="shipLocation"/> 
+                    <br /><br />
+
+                    <button type="reset">Clear</button>
+                    <button type="submit">Enter</button>
+
+                </form>
+            
+                <form id="userInfoForm2" hidden="true">
+                    <br />
+                    <div>example ship entry:  A(A1-A5);B(B6-E6);S(H3-J3);</div>
+
+                    <input type="text" placeholder="Enter Your Name" id="playerName2" name="playerName"  />
+                    <br /><br />
+
+                    <input type="text" placeholder="Ship Locations" id="playerShips2" name="shipLocation" /> 
+                    <br /><br />
+
+                    <button type="reset" id="reset2">Clear</button>
+                    <button type="submit" id="submit2">Enter</button>
+
+                </form>
+        </div>
+
+        <div class="startTurn" id="startTurnID" hidden="true">
+            <p id="playersTurnText"></p>
+            <button id="turnBtn" hidden="true">OK</button>
+        </div>
+        
+
+        <div class="playArea">
+            <div id="gameOver">
+                <!-- <p id="gameOverText" hidden="true"></p>
+                <p id="player1Score" hidden="true"></p> -->
+
+            </div>
+            <div class="endTurn" id="endTurnParent">
+                <p id="shotIndicator" hidden="true"></p>
+                <button id="endTurnBtn" hidden="true"> End Turn </button>
+                
+            </div> 
+            <div id="gridArea" hidden="true">
+
+                <div id="player1Area">
+                    <div id="player1Name"></div>
+                    <div id="player1Grid"></div>
+                    <div id="player1DestroyedShips" hidden="true">Destroyed Ships:
+                    </div>
+                </div>
+
+                <div id="player2Area">
+                    <div id="player2Name"></div>
+                    <div id="player2Grid"></div>
+                    <div id="player2DestroyedShips" hidden="true">Destroyed Ships:
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </body>
+    <script src="battleshipScript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</html> 
